@@ -22,14 +22,6 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean compile
-
-  sbom:
-    name: 'SBOM'
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v4.0.0
-        
-    - name: Run SBOM with Maven
-      run: mvn cyclonedx-makeBom
+    - name: Output SBOM
+      run: |
+        cat ../../target/bom.json
