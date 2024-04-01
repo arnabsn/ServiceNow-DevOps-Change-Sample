@@ -25,5 +25,4 @@ jobs:
     - name: Output SBOM
       run: |
         ls target/
-        ls ../../target
-        cat ../../target/bom.json
+        cat target/bom.json
