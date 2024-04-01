@@ -32,4 +32,4 @@ jobs:
       uses: actions/checkout@v4.0.0
         
     - name: Run SBOM with Maven
-      run: mvn makeBom
+      run: mvn cyclonedx-makeBom
