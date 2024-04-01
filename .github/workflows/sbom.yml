@@ -31,5 +31,5 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4.0.0
         
-    - name: Run Tests with Maven
+    - name: Run SBOM with Maven
       run: mvn makeBom
